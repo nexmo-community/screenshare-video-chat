@@ -1,0 +1,28 @@
+{
+  "name": "screenshare-video-chat",
+  "version": "0.0.1",
+  "description": "Build a basic audio-video chat with screen-sharing functionality",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "opentok": "^2.9.2"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/screenshare-video-chat"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ],
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

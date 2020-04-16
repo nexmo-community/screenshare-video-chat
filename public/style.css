@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 0.5em;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+input,
+button {
+  font-size: inherit;
+  padding: 0.5em;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.registration input[type="text"] {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.subscriber,
+.screen.pub-active,
+.screen.sub-active {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.screen.sub-active ~ .subscriber,
+.screen.pub-active ~ .subscriber {
+  position: absolute;
+  width: 25vmin;
+  height: 25vmin;
+  min-width: 8em;
+  min-height: 8em;
+  align-self: flex-end;
+  right: 0;
+}
+
+.publisher {
+  position: absolute;
+  width: 25vmin;
+  height: 25vmin;
+  min-width: 8em;
+  min-height: 8em;
+  align-self: flex-end;
+}
+
+.screen-share {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5em;
+}
